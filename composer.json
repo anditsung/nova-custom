@@ -1,0 +1,36 @@
+{
+    "name": "tsung/nova-custom",
+    "description": "Customization for Laravel Nova",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "authors": [
+        {
+            "name": "anditsung",
+            "email": "anditsung@gmail.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0",
+        "laravel/nova": "^2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tsung\\NovaCustom\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tsung\\NovaCustom\\CustomServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
