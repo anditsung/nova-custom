@@ -42,7 +42,7 @@
                     @actionExecuted="$emit('actionExecuted')"
                 />
 
-                <!-- Default Actions Menu -->
+                <!-- Default Menu -->
                 <default-actions
                     :resource="resource"
                     :resource-name="resourceName"
@@ -56,7 +56,7 @@
                     :restore-resource="restoreResource"
                 />
 
-                <!-- Custom Actions Menu -->
+                <!-- Custom Menu -->
                 <component
                     v-if="hasComponent"
                     :is="component"
@@ -112,11 +112,6 @@ export default {
          */
         toggleSelection() {
             this.updateSelectionStatus(this.resource)
-        },
-
-        updateResource(resource) {
-            this.restoreResource(resource)
-
         }
     },
 }
